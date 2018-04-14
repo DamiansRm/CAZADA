@@ -16,6 +16,26 @@ class conexion {
         $this->conexion->close();
     }
 
+
+    //funciones para clase añadir, eliminar y modificar
+
+    function addClase($tutor, $turno, $clase) {
+        $ssql = "insert into clases ('Tutor','Turno','Clase') VALUES ($tutora,$turno,$clase)";
+        this->conectar();
+
+        if ($resultado = $this->conexion->query($ssql)) {
+            echo "fila insertada";
+            //header('Location: index.php');
+        } else {
+            echo "fila no insertada";
+            //header('Location: index.php');
+        }
+        this->desconectar();
+    }
+
+
+    //#################################################################
+
     function consulta($query) {
         $array = array();
         $this->conectar();
