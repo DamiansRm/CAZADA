@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body #main{font-family: "Roboto", sans-serif;}
+
+body #header{
+    max-width: 1000px;
+    margin:0 auto;
+    background: #76b852;
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+}
+
+#header a{text-decoration: none;color:black;}
+
+#header .divlogo{width: 130px; display: inline-block;}
+#header .divlogo img{width: 100px;margin:20px;vertical-align: middle;}
+#header .divlogoname{display: inline-block;text-align: center;vertical-align: middle;}
+#header .divlogoname span{display: block;font-size: 20px;}
+#header .divlogoname span:nth-child(1){font-weight: bold;font-size: 28px !important;}
+
+#header .typepanel{display: inline-block;text-align: center;float:right;right: 15px;top:40px;position: relative;}
+#header .typepanel span:nth-child(1){font-size: 28px;display: block;}
+#header .typepanel span:nth-child(2){font-size: 32px;font-weight: bold;}
+
+#header .cerrarSesion{position: relative;float: right;right: -240px;top: 5px;text-decoration: underline;}
